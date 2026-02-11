@@ -11,12 +11,12 @@ public class Product {
   private Money price;
   private int itemsInStock;
 
-  public Product(ProductId id, String name, String description, Money price) {
+  public Product(ProductId id, String name, String description, Money price, int itemsInStock) {
     this.id = id;
     this.name = name;
     this.description = description;
     this.price = price;
-    this.itemsInStock = 0;
+    this.itemsInStock = itemsInStock;
   }
 
   public ProductId getId() {
